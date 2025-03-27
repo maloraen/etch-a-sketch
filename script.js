@@ -25,8 +25,8 @@ function createGrid(size) {
 const gridSizeButton = document.querySelector(".grid-size-button");
 gridSizeButton.addEventListener("click", () => {
     // prompt user for a number
-    let prompt = prompt("Grid Size (e.g. 16 for 16x16):");
-    let input = Number(prompt);
+    let message = prompt("Grid Size (e.g. 16 for 16x16):");
+    let input = Number(message);
 
     // validate user input
     if (isNaN(input) || input <= 0 || input > 100) {
